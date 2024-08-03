@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Price Checker</title>
+    <style>
+        #stockPrices {
+            margin-top: 20px;
+        }
+        .stock-info {
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .stock-info h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stock Price Checker</h1>
+    <div>
+        <p>Please enter stock symbol to add to the list.</p>
+        <p>E.g. 'BTC':'Bitcoin.', 'AAPL': 'Apple Inc.', 'MSFT': 'Microsoft Corporation', 'GOOGL': 'Alphabet Inc.',
+        'AMZN': 'Amazon.com, Inc.', 'TSLA': 'Tesla, Inc.', etc.</p>
+    </div>
+    <br>
+    <input 
+    type="text" 
+    id="stockSymbol" 
+    placeholder="Enter Stock Symbol (e.g., AAPL)" 
+    size="30"
+    value="AAPL"
+    autofocus>
+    <button onclick="addStockSymbol()">Add Symbol</button>
+    <!-- Display div-->
+    <div id="stockPrices"></div>
+
+    <script src="task2.js"></script>
+</body>
+</html>
